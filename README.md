@@ -6,8 +6,7 @@ Integrate Prometheus and Grafana and perform in following way:
 2.  And make their data to be remain persistent 
 3.  And both of them should be exposed to outside world
 
-
-1. Creating a Dockerfile for Prometheus container.
+#  Creating a Dockerfile for Prometheus container.
 
 ## Dockerfile:
 
