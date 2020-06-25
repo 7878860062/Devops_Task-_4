@@ -1,1 +1,13 @@
 
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: prom-pv-claim
+spec:
+  storageClassName: manual
+  accessModes: 
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi
+ 
