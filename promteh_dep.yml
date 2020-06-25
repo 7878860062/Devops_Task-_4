@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: graf-dep
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: grafana
+
+  template:
+    metadata:
+      name: graf-dep
+      labels:
+        app: grafana
+    
+    spec:
+      containers:
+        - name: graf-os
+          image: dockerninad07/grafana:v1
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always  
+
